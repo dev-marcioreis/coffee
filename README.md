@@ -7,7 +7,7 @@ Este projeto será uma landing page para cafeterias.
 ## 🚀 Em desenvolvimento...
 
 ## 📋 Tecnologias
-HTML + CSS + JavaScript
+HTML + CSS + JavaScript + GSAP
 
 ## ✒️ Autor
 Márcio Reis
