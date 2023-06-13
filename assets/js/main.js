@@ -36,3 +36,19 @@ if(window.innerWidth <= 992) {
 window.addEventListener('scroll', () => {
     document.querySelector('.header').classList.toggle('scrolling', window.scrollY)
 })
+
+
+// Mouse move
+document.addEventListener('mousemove', move)
+
+function move(e) {
+    this.querySelectorAll('.move').forEach(layer => {
+
+        const speed = layer.getAttribute('move-speed')
+        const x = (window.innerWidth - e.pageX * speed) / 120
+        const y = (window.innerWidth - e.pageX * speed) / 120
+
+        layer.style.transform = `translateX(${x}px) translateY(${y}px)`
+    })
+}
+
