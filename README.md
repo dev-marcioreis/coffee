@@ -2,7 +2,7 @@
 
 ---
 
-Este projeto será uma landing page para cafeteria de um cliente.
+Este projeto será uma landing page para cafeterias.
 
 ## 🚀 Em desenvolvimento...
 
