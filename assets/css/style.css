@@ -459,6 +459,7 @@ img {
   display: flex;
   align-items: flex-start;
   justify-content: center;
+  transition: var(--transition);
 }
 .about__image {
   position: relative;
