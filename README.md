@@ -2,9 +2,9 @@
 
 ---
 
-Este projeto será uma landing page para cafeterias.
+Este projeto é uma landing page para cafeterias.
 
-## 🚀 Em desenvolvimento...
+## 🚀 Finalizado!
 
 ## 📋 Tecnologias
 HTML + CSS + JavaScript + GSAP
