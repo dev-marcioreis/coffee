@@ -601,19 +601,11 @@ img {
 }
 .card__top-circle {
   position: absolute;
-  top: -1.5rem;
-  left: -.5rem;
-  display: grid;
-  place-items: center;
-  width: 60px;
-  height: 60px;
-  background: var(--color-primary);
-  border-bottom-right-radius: 2rem;
+  top: .5rem;
+  left: .5rem;
 }
 .card__top-image {
   width: 30px;
-  height: 30px;
-  filter: invert(1);
 }
 .card__top-subtitle {
   display: block;
@@ -671,6 +663,8 @@ img {
   background-image: url('../images/steps-bg.png');
   background-repeat: no-repeat;
   background-size: cover;
+  padding: 9rem 0;
+  margin-block-start: 8rem;
 }
 .steps__container {
   text-align: center;
@@ -731,4 +725,105 @@ img {
 }
 
 
+/*==========Media Query Steps==========*/
+@media (max-width: 992px) {
+  .steps {
+    margin-block-start: 3rem;
+  }
+
+}
+
+/*==========Media Query Mobile Steps==========*/
+@media (max-width: 768px) {
+  .steps {
+    padding: 0;
+  }
+
+}
+
+
 /*==========News==========*/
+.news__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.news__image {
+  flex: 1;
+}
+.news__image img {
+  filter: contrast(1.2);
+  mix-blend-mode: multiply;
+  animation: 3s float linear infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+
+}
+
+.news__content {
+  flex: 1;
+}
+.news__content h3 {
+  color: var(--color-white);
+  font-size: 3rem;
+  font-weight: 200;
+  font-style: italic;
+  letter-spacing: -2px;
+  margin-block-end: 2rem;
+}
+.news__content h3 span {
+  font-family: var(--font-logo);
+  font-size: 5rem;
+  color: var(--color-secondary);
+  text-shadow: var(--shadow-1);
+  text-transform: capitalize;
+  font-style: normal;
+}
+.news__content p {
+  color: var(--color-secondary);
+  font-weight: 500;
+}
+.news__content .btn {
+  margin-block-start: 2rem;
+}
+
+
+/*==========Media Query News==========*/
+@media (max-width: 992px) {
+  .news {
+    margin-block-start: 3rem;
+  }
+  .news__container {
+    flex-direction: column-reverse;
+  }
+  .news__content h3 {
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  .news__content h3 span {
+    font-size: 3.5rem;
+  }
+
+}
+
+
+/*==========Media Query Mobile News==========*/
+@media (max-width: 768px) {
+  .news__content h3 {
+    font-size: 1.8rem;
+  }
+  .news__content h3 span {
+    font-size: 2.8rem;
+  }
+
+}
