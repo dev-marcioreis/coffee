@@ -5,7 +5,7 @@ const menuNavbar = document.querySelector('.navbar__menu')
 const overlay = document.querySelector('.overlay')
 
 const openMenu = () => {
-    menuNavbar.style.right = '.1rem'
+    menuNavbar.style.right = '0'
     openMenuBtn.style.display = 'none'
     closeMenuBtn.style.display = 'block'
 }
